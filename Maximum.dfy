@@ -6,6 +6,8 @@ ensures (exists j:int :: 0 <= j < len && max == a[j])
   max := 0;
   var i := 0;
   while i < len
+  // add your invariants here via
+  // invariant <inv>
   {
     if max < a[i] {
       max := a[i];
